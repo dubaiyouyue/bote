@@ -1,0 +1,111 @@
+
+
+<!--内容 开始-->
+    <div class="platform">
+        <!--当前位置 开始-->
+        <div class="positon">
+            <a href="/index.php/Home/{$getinfolamu.foldername}/index/cid/{$getinfolamu.id}.html" class="po_text">{$getinfolamu.enname}<span class="po_te_span">></span></a>
+            <a href="/index.php/Home/{$lan.foldername}/index/cid/{$cid}.html" class="po_text po_dq">{$lan.enname}<span class="po_te_span">></span></a>
+        </div>
+        <!--当前位置 结束-->
+        
+        <div class="pl_middle">
+            <!--二级导航 开始-->
+            <div class="nav">
+                <foreach name="lanmu" item="r" key="k" >
+					<li class="nav_each <?php
+        if($r['id']==$cid || $r['id']==$location_two_id) echo 'nav_dq';
+
+      ?>">
+					<a href="/index.php/Home/{$r.foldername}/index/cid/{$r.id}.html">{$r.enname}</a>
+					
+					</li>
+				  </foreach>
+            </div>
+            <!--二级导航 结束-->
+            
+            <!--内容 开始-->
+            <div class="right_ma">
+               
+              
+                
+                
+                <div class="mar_news">
+                    <div class="mer_ne_bagtitle">{$lan.enname}</div>
+                    <foreach name="list" item="r" key="k" ><?php
+	$nnnttimm=explode(' ',$r['updatetime']);
+?>
+                    <div class="mar_ne_each">
+                        <a href="/index.php/Home/Newsshow/index/cid/{$cid}/c/{$location_one_id}/id/{$r.id}.html">
+                            <span class="mar_ne_title">{$r.ctitle}</span>
+                            <span class="mar_ne_date">{$nnnttimm.0}</span>
+                        </a>
+                    </div>
+                    
+                    </foreach>
+                    
+                    <div class="paging_ne" id="paga" style="text-align: center;"></div>
+           
+
+
+
+
+<!--分页-->
+		
+		   
+		
+<script>//好像很实用的样子，后端的同学再也不用写分页逻辑了。
+laypage({
+  cont: 'paga',
+  pages: '{$allpage}', //可以叫服务端把总页数放在某一个隐藏域，再获取。假设我们获取到的是18
+  curr:'{$p}',
+  jump: function(e, first){ //触发分页后的回调
+    if(!first){ //一定要加此判断，否则初始时会无限刷新
+      
+         var ulrsss='/index.php/Home/{$lan.foldername}/index/cid/{$cid}/p/'+e.curr+'.html';
+          location.href = ulrsss;
+
+
+    }
+  }
+});
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		   
+                </div>
+                
+                
+               
+                
+            
+            <p class="ma_prompt">
+                {$config_info.engz_hemmttfffxzzxxzwzttt}
+            </p>
+            
+            
+                
+            </div>
+            <!--内容 结束-->
+            
+        </div>   
+    <!--内容 结束-->
+    </div>    

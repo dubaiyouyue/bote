@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{$seo_title}</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="{$seo_title}">
+<meta name="description" content="{$seo_title}">
+    <link rel="stylesheet" href="/css/public.css"><!--公共样式CSS-->
+    <link rel="stylesheet" href="/css/style.css"><!--页面样式CSS-->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="/laypage/laypage.js"></script><style>
+.me_li{width: 84px;
+    height: 100px;
+    overflow: hidden;box-sizing: border-box;}.me_li{padding: 0px}/*头部导航*/
+</style>
+</head>
+
+<body>
+    
+    <!-----------------头部 开始--------------------->
+    <div class="top">
+        <div class="top_line"></div>
+        <div class="top_middle">
+            <div class="logo"><a href="/"><img src="{$config_info.gz_logo}"/></a></div>
+            <!-------导航 开始------->
+            <div class="menu">
+                <ul>
+<foreach name="new_column_list_top" item="r" key="k" >
+               <li class=" <?php
+        if($foldername==$r['foldername'] || $r['id']==$_GET['c'] || $r['id']==$location_one_id) echo 'dq';
+
+      ?> me_li"><a href="/index.php/Home/{$r.foldername}/index/cid/{$r.id}.html"">{$r.name}</a></li>
+			    </foreach>
+                   
+                </ul>
+                <?php
+					$config_info['gz_headTelesszyxxlj']=str_ireplace(':/','://',$config_info['gz_headTelesszyxxlj']);
+					$config_info['gz_heazcsryxxlj']=str_ireplace(':/','://',$config_info['gz_heazcsryxxlj']);
+					$config_info['gz_heazcsryxxljeeww']=str_ireplace(':/','://',$config_info['gz_heazcsryxxljeeww']);
+					$config_info['gz_hemmttfffxz']=str_ireplace(':/','://',$config_info['gz_hemmttfffxz']);
+					$hhyy=explode("\r\n",$config_info['gz_headeryjhhyy']);
+					$config_info['gz_hemmttfffxzzxxzwz']=str_ireplace("\r\n",'<br>',$config_info['gz_hemmttfffxzzxxzwz']);
+					$config_info['gz_hemmttfffxzzxxzwzttt']=str_ireplace("\r\n",'<br>',$config_info['gz_hemmttfffxzzxxzwzttt']);
+					//dump($hhyy);exit;
+				?>
+                <!-------右边按钮 开始------->
+                <div class="top_right">
+                    <div class="top_information"><a href="{$config_info.gz_headTelesszyxxlj}">{$hhyy.0}<span class="top_in_point"></span></a></div>
+                    <div class="top_registered"><a href="{$config_info.gz_heazcsryxxlj}">{$hhyy.2}</a></div>
+                    <div class="top_button">
+                        <div class="top_ri_line"></div>
+                        <a href="{$config_info.gz_heazcsryxxljeeww}">
+                            {$hhyy.5}
+                        </a>
+                    </div>
+                </div>
+                <!-------右边按钮 结束------->
+            </div>
+            <!-------导航 结束------->
+            
+            
+        </div>
+        
+        <!---------------侧边固定按钮 开始-------------->
+        <div class="buttom">
+            <div class="bu_each">
+                <a href="{$config_info.gz_hemmttfffxz}"><img src="/images/2_03.png"/>{$hhyy.6}</a>
+            </div>
+            <div class="bu_each">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin={$config_info.gz_headTeless}&site=qq&menu=yes" target="_blank"><img src="/images/2_07.png"/>{$hhyy.8}</a>
+            </div>
+        </div>
+        <!---------------侧边固定按钮 结束-------------->
+    </div>
+    <!-----------------头部 结束--------------------->
+    
+    <!------------------------------------banner 开始----------------------------------->
+    <div class="banner_inside"><img src="{$blist.img_path}"/></div>
+    <!------------------------------------banner 结束----------------------------------->

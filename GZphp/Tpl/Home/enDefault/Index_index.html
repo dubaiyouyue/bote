@@ -1,0 +1,280 @@
+{__NOLAYOUT__}<!DOCTYPE html>
+<html>
+<head>
+<title>{$enseo_title}</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="{$enseo_title}">
+<meta name="description" content="{$enseo_title}">
+    <link rel="stylesheet" href="css/public.css"><!--公共样式CSS-->
+    <link rel="stylesheet" href="css/style.css"><!--页面样式CSS-->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.9.0/jquery.min.js"></script>
+<style>
+/*.me_li{width: 84px;
+    height: 100px;
+    overflow: hidden;box-sizing: border-box;}.top_information,.top_registered{width:78px;height:21px;overflow:hidden;box-sizing: border-box;}*/
+	.top_right{    position: absolute;
+    top: -65px;
+    z-index: 9999;
+    right: 21px;}.top{    height: 115px;}.me_li a{line-height: 50px;}.menu{margin-top: 45px;}
+</style>
+</head>
+
+<body>
+    <!--背景图 开始-->
+    <div class="background_img"></div>
+    <!--背景图 结束-->
+    
+    <!-----------------头部 开始--------------------->
+    <div class="top">
+        <div class="top_line"></div>
+        <div class="top_middle">
+            <div class="logo"><a href="/"><img src="{$config_info.gz_logo}"/></a></div>
+            <!-------导航 开始------->
+            <div class="menu" style="position: relative;">
+                <ul>
+                    <foreach name="new_column_list_top" item="r" key="k" >
+               <li class=" <?php
+        if($foldername==$r['foldername'] || $r['id']==$_GET['c'] || $r['id']==$location_one_id) echo 'dq';
+
+      ?> me_li"><a href="/index.php/Home/{$r.foldername}/index/cid/{$r.id}.html"">{$r.enname}</a></li>
+			    </foreach>
+                </ul>
+                
+                                <?php
+					$config_info['gz_weburl']=str_ireplace(':/','://',$config_info['gz_weburl']);
+					$config_info['gz_headTelesszyxxlj']=str_ireplace(':/','://',$config_info['gz_headTelesszyxxlj']);
+					$config_info['gz_heazcsryxxlj']=str_ireplace(':/','://',$config_info['gz_heazcsryxxlj']);
+					$config_info['gz_heazcsryxxljeeww']=str_ireplace(':/','://',$config_info['gz_heazcsryxxljeeww']);
+					$config_info['gz_hemmttfffxz']=str_ireplace(':/','://',$config_info['gz_hemmttfffxz']);
+					$hhyy=explode("\r\n",$config_info['gz_headeryjhhyy']);
+					$lljsfsdfsdlang=$hhyy['4'];
+					foreach($hhyy as $k=>&$v){
+						$kn=$k+1;
+						if(!($k%2)) $v=$hhyy[$kn];
+					}
+					$config_info['gz_hemmttfffxzzxxzwz']=str_ireplace("\r\n",'<br>',$config_info['gz_hemmttfffxzzxxzwz']);
+					$config_info['gz_hemmttfffxzzxxzwzttt']=str_ireplace("\r\n",'<br>',$config_info['gz_hemmttfffxzzxxzwzttt']);
+					//dump($hhyy);exit;
+				?>
+                <!-------右边按钮 开始------->
+                <div class="top_right">
+                    <div class="top_information"><a href="{$config_info.gz_headTelesszyxxlj}">{$hhyy.0}<span class="top_in_point"></span></a></div>
+                    <div class="top_registered"><a href="{$config_info.gz_heazcsryxxlj}">{$hhyy.2}</a></div>
+                    <div class="top_button">
+                        <div class="top_ri_line"></div>
+                        <a href="{$config_info.gz_weburl}">
+                            {$lljsfsdfsdlang}
+                        </a>
+                    </div>
+                </div>
+                <!-------右边按钮 结束------->
+            </div>
+            <!-------导航 结束------->
+            
+            
+        </div>
+        
+        <!---------------侧边固定按钮 开始-------------->
+        <div class="buttom">
+            <div class="bu_each">
+                <a href="{$config_info.gz_hemmttfffxz}"><img src="/images/2_03.png"/>{$hhyy.6}</a>
+            </div>
+            <div class="bu_each">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin={$config_info.gz_headTeless}&site=qq&menu=yes" target="_blank"><img src="/images/2_07.png"/>{$hhyy.8}</a>
+            </div>
+        </div>
+        <!---------------侧边固定按钮 结束-------------->
+    </div>
+    <!-----------------头部 结束--------------------->
+    
+    <!------------------------------------渐变背景 开始----------------------------------->
+    <div class="index">
+        
+        <!--内容 开始-->
+        <div class="in_middle">
+            
+            <div class="slogen"><img src="{$config_info.gz_hsjjquenginggimgg}"/></div>
+            
+            <div class="in_mi_content">
+                <div class="in_mi_background"></div>
+                <div class="in_mi_list">
+                    <!--标题 开始-->
+                    <div class="in_mi_title">
+                        {$config_info.gz_eenfootother}
+                    </div>
+                    <!--标题 结束-->
+                    <!--列表 开始-->
+                    <div class="in_list" style="background: url({$config_info.gz_hsjjqccssimgg}) no-repeat center center; background-size: cover;">
+                        <a href="/index.php/Home/Calendar/index/cid/505.html">
+                            <div class="in_li_word">
+                                <p class="in_li_wo_p">CALENDAR OF FINANCE AND ECONOMICS</p>
+                                <p class="in_li_wo_p1" style="display:none;">财经日历</p>
+                                <img src="images/index111.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in_list" style="background: url({$config_info.gz_hggxxwwg}) no-repeat center center; background-size: cover;">
+                        <a href="/index.php/Home/Gnews/index/cid/507.html">
+                            <div class="in_li_word">
+                                <p class="in_li_wo_p">GLOBAL NEWS</p>
+                                <p class="in_li_wo_p1" style="display:none;">全球新闻</p>
+                                <img src="images/index111.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in_list" style="background: url({$config_info.gz_hguanyuwwbdg}) no-repeat center center; background-size: cover;">
+                        <a href="/index.php/Home/About/index/cid/318.html">
+                            <div class="in_li_word">
+                                <p class="in_li_wo_p">ABOUT BERTON</p>
+                                <p class="in_li_wo_p1" style="display:none;">关于伯顿</p>
+                                <img src="images/index111.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in_list" style="background: url({$config_info.gz_hguyoushibdg}) no-repeat center center; background-size: cover;">
+                        <a href="/index.php/Home/About/index/cid/471.html">
+                            <div class="in_li_word">
+                                <p class="in_li_wo_p">BERTON ADVANTAGE</p>
+                                <p class="in_li_wo_p1" style="display:none;">伯顿的优势</p>
+                                <img src="images/index111.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="in_list" style="background: url({$config_info.gz_hggsxinwwbdg}) no-repeat center center; background-size: cover;">
+                        <a href="/index.php/Home/News/index/cid/477.html">
+                            <div class="in_li_word">
+                                <p class="in_li_wo_p">COMPANY NEWS</p>
+                                <p class="in_li_wo_p1" style="display:none;">公司新闻</p>
+                                <img src="images/index111.png"/>
+                            </div>
+                        </a>
+                    </div>
+                    <!--列表 结束-->
+                </div>
+            </div>
+            
+            <div class="in_line"></div>
+            
+            <div class="in_p" style="font-size: 14px;color: #fff;">
+                {$config_info.engz_hemmttfffxzzxxzwzttt}
+            </div>
+        </div>
+        <!--内容 结束-->
+        
+        
+        
+    
+        
+        <!----------------------底部 开始----------------------->
+        <link rel="stylesheet" href="css/idangerous.swiper.css">
+        <script type="text/javascript" src="js/idangerous.swiper.min.js"></script>
+        <style>
+            .bottom{width: 100%; border-top:4px #d4b164 solid;}
+            .bo_middle{width: 1200px; margin: auto;}
+            .rolling{height:40px; width: 100%; overflow: hidden; margin-top:30px;}
+            .rolling ul{height: 100%;width: 100%;}
+            .swiper-slide{width: 144px; height: 39px; margin: 0px 15px;float: left;}
+            .bo_line{width: 100%; height: 1px; background: #7A7A7A; margin-top:30px;}
+            .email{font-size: 14px; color: #fff; text-align: right; padding: 17px 0px;}
+        </style>
+        <div class="bottom">
+            <div class="bo_middle">
+                <!--底部滚动图片 开始-->
+                <div class="rolling swiper-container">
+                    <ul class="swiper-wrapper">
+                       <foreach name="youqinglianjielist" item="r" key="k" ><li class="swiper-slide orange-slide"><img src="{$r.weblogo}"/></li></foreach><foreach name="youqinglianjielist" item="r" key="k" ><li class="swiper-slide orange-slide"><img src="{$r.weblogo}"/></li></foreach><foreach name="youqinglianjielist" item="r" key="k" ><li class="swiper-slide orange-slide"><img src="{$r.weblogo}"/></li></foreach>
+                    </ul>
+                </div>
+                <!--底部滚动图片 结束-->
+                <div class="bo_line"></div>
+                <p class="email">{$hhyy.10}{$config_info.gz_foottel}</p>
+            </div>
+        </div>
+        
+        <!----------------------底部 结束----------------------->
+    </div>
+ 
+<script> 
+var mySwiper = new Swiper('.swiper-container',{
+loop : true,
+slidesPerView : 9,
+slidesPerGroup :9,
+autoplay : 3000
+})
+</script>
+
+
+
+<script>  /*异步加载 - 在线交流 - 站长统计 */
+  var gz_weburl='/';
+  var lang='cn';
+  var classnow='{$cid}';
+  var id='<?php echo $_GET['id'];?>';
+  
+  var url=gz_weburl+'include/interface/uidata.php?lang='+lang,h = '<?php echo 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];?>';
+  
+  if(h.indexOf("preview=1")!=-1)url = url + '&theme_preview=1';
+  $.ajax({
+    type: "POST",
+    url: url,
+    dataType:"json",
+    success: function(msg){
+      var c = msg.config;
+      
+      if(c.gz_stat==1){       //站长统计
+        var navurl=classnow==10001?'':'../';
+        var stat_d=classnow+'-'+id+'-'+lang;
+        var url = gz_weburl+'include/stat/stat.php?type=para&u='+navurl+'&d='+stat_d;
+        $.getScript(url);
+      }
+    }
+  });
+    //var metClicks = $(".metClicks");//点击次数
+    var ClicksListnow='<?php echo $_GET['id'];?>';
+    var weburl='/';
+    if(ClicksListnow){
+      //var DataClicks = metClicks.data("metclicks");
+      //ClicksStr=DataClicks.split("|"); 
+      var ClicksModule = 'news';//ClicksStr[0],ClicksListnow = ClicksStr[1];
+      var urlw = weburl+'include/hits.php?type='+ClicksModule+'&id='+ClicksListnow;
+      $.ajax({
+        type: "POST",
+        url: urlw,
+        dataType:"text",
+        success: function(msg){
+          //var t = msg.split('"');
+          //metClicks.html(t[1]);
+        }
+      });
+    }
+</script>
+
+    <!------------------------------------渐变背景 结束----------------------------------->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+*{padding:0px;margin:0px;font-family: 微软雅黑, "Microsoft yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", "Microsoft Yahei", "Hiragino Sans GB", "冬青黑体简体中文 w3", STXihei, 华文细黑, SimSun, 宋体, Heiti, 黑体, sans-serif, Arial;}
+img{display:block;max-width:100%;}
+html,body{min-height:100%;}
+    a{text-decoration:none;}
+    ul,li,dt,dd,dl,img,input,textarea,button,p,h1,h2,h3,h4{margin:0; padding:0; border:0; list-style-type:none; font-weight:normal;}
+/*利用:after伪元素*/  
+.clearUl:after {  
+content:"";
+display: block;  
+clear: both;  
+}
+/*去掉iPhone按钮样式 蓝色边框*/
+input,textarea{outline:none;-webkit-appearance: none;}
+
+
+/*---------------------------------------------------头部 开始--------------------------------------------------------*/
+.top{width: 100%;height: 103px; background: url(../images/index_03.png) repeat; position: fixed; top:0px; z-index: 9999}
+.top_line{width: 100%; height:4px; background:#d4b164;}
+.top_middle{width: 1200px; margin: auto;}
+.logo{display: inline-block; vertical-align: top; margin-right:40px;margin-top: 6px;}
+/*-导航 开始-*/
+.menu{display: inline-block;vertical-align: top; float: right;}
+.menu ul{display: inline-block; vertical-align: top;}
+.me_li{display:inline-block; vertical-align:top; margin:0px 10px; padding:0px 10px;border-bottom:3px; border-bottom-color: transparent; border-bottom-style: solid;}
+.me_li a{ display: block; line-height:97px; font-size: 16px; color: #484849;}
+.me_li:hover{border-bottom: 3px #174fa7 solid;}
+.me_li:hover a{color:#174fa7; font-weight: bold; }
+
+/*导航当前效果 开始*/
+.dq{border-bottom: 3px #174fa7 solid;}
+.dq a{color:#174fa7; font-weight: bold;}
+/*导航当前效果 结束*/
+/*-导航 结束-*/
+
+
+.top_right{display: inline-block; vertical-align: top;margin-top:37px; margin-left: 20px;}
+
+
+/*重要通知按钮 开始*/
+.top_information{display: inline-block; vertical-align: top; position: relative;}
+.top_information a{font-size: 14px; border: #ECECEC 1px solid; border-radius:8px; color:#646363;padding:3px 10px}
+.top_in_point{width: 3px; height: 3px; background: #D52C2F;border-radius: 5px; display: block;position: absolute;top:-3px; right: -2px;}
+/*重要通知按钮 结束*/
+
+.top_registered{display: inline-block; vertical-align: top; margin-left: 10px;}
+.top_registered a{font-size: 14px; border: #ECECEC 1px solid; border-radius:8px; color:#646363;padding:3px 10px}
+
+.top_button{display: inline-block; vertical-align: top; margin-left: 10px;}
+.top_button .top_ri_line{width: 1px; height: 14px; background:#ECECEC; display: inline-block; vertical-align: middle; margin-right: 10px;}
+.top_button a{font-size: 14px;color:#646363;}
+/*---------------------------------------------------头部 结束--------------------------------------------------------*/
+
+
+
+
+/*---------------------内页banner 开始------------------*/
+.banner_inside{width: 100%;/* height: 480px;*/}
+/*---------------------内页banner 结束------------------*/
+
+
+
+/*---------------------------当前位置 开始----------------------------*/
+
+.positon{width: 100%; border-bottom: 1px #eeeeee solid;padding: 10px 0px; margin: 20px 0px 60px 0px;}
+.po_text{font-size: 14px; font-weight: bold; color: #484849; display: inline-block;}
+.po_te_span{font-size: 14px; font-family: "宋体"; margin:0px 10px;}
+.po_text:last-child .po_te_span{display: none;}
+.po_dq{color: #114094;}
+/*---------------------------当前位置 结束----------------------------*/
+
+
+
+
+
+/*-----------------------二级导航 开始------------------------*/
+.nav{width:228px; display: inline-block; vertical-align: top;}
+.nav_each{width:228px;padding: 10px 10px;background: #c4c4c4;margin-bottom: 1px}
+.nav_each a{font-size: 16px; color: #fff; display: block;}
+.nav_dq{background: url(../images/platform1.png) no-repeat center center; background-size: cover;}
+.nav_each:hover{background: url(../images/platform1.png) no-repeat center center; background-size: cover;}
+/*-----------------------二级导航 结束------------------------*/
+
+
+
+/*----------------------右边固定按钮 开始-----------------------*/
+.buttom{width: 167px; position: fixed; bottom: 300px; right: 0px;}
+.bu_each{width: 167px; height: 57px; background: url(../images/2_11.png) no-repeat center center; background-size: cover; margin-bottom: 10px;}
+.bu_each a{font-size: 16px;color: #fff;line-height: 57px;}
+.bu_each a img{width: 34px; display: inline-block; vertical-align: top; margin-top: 10px; margin-left: 20px; margin-right: 20px;}
+/*----------------------右边固定按钮 结束-----------------------*/
+
+
+
+
+
+
+
+.paging_ne{width:100%; margin:50px auto;}
+.pa_ul{text-align: center;margin: auto;}
+.pa_ul li{ font-size: 16px; display: inline-block; *display:inline; zoom:1;padding: 0px 4px;}
+
+.pa_span{width:15px; height: 1px; background:#575757; }
+.pa_dq a .pa_span{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
